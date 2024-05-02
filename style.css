@@ -80,7 +80,7 @@ body{
 }
 
 .top-body-z1 button{
-    width: 20%;
+    min-width: 20%;
     background-color: var(--clr-dark2);
     color: var(--clr-lightgrey);
     outline: none;
