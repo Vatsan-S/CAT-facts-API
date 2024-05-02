@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Seaweed+Script&display=swap');
+:root{
+    --fs-logo: 2.5rem;
+    --fs-body: 0.8rem;
+
+    --clr-darkBg: #111111;
+    --clr-dark2: #000;
+    --clr-accent: #E9A624;
+    --clr-lightgrey: #D8D7DE;
+    --clr-card: #1F1F1F;
+    --clr-card2: #292929;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.row{
+    background-color:green;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.zone1{
+    background-color: var(--clr-darkBg);
+    height: 100vh;
+    display: flex;
+    flex-direction:column;
+    padding: 32px;
+    align-items: center;
+    justify-content: space-around;
+    /* width: 100px; */
+}
+
+.zone2{
+    background-color: #161616;
+    height: 100vh;
+    padding: 64px;
+    /* width: 100px; */
+}
+
+.top-body-z1{
+    height: 30%;
+    width: 100%;
+    /* background-color: lightgrey; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1{
+    color: var(--clr-lightgrey);
+    font-size: var(--fs-logo);
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 3px;
+    line-height: 0.5;
+}
+
+.logo p{
+    color: var(--clr-accent);
+    font-family: "Seaweed Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+
+}
+
+.top-body-z1 button{
+    width: 20%;
+    background-color: var(--clr-dark2);
+    color: var(--clr-lightgrey);
+    outline: none;
+    border: none;
+}
+
+.top-body-z1 button:hover{
+    background-color: var(--clr-dark2);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.bottom-body-z1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.generationZone{
+    min-height: 200px;
+    width: 80%;
+    /* border: 1px grey solid; */
+    padding: 16px;
+    border-radius: 4px;
+    background-color: var(--clr-card);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.droptarget{
+    height: 100%;
+    /* border: 1px dotted grey; */
+    overflow: auto;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: var(--clr-card);
+    padding-bottom: 100px;
+
+}
+
+.dragging{
+    opacity: .8;
+    /* color: red; */
+}
+
+
+
+.draggableCard{
+    background-color: var(--clr-card2);
+    color: var(--clr-lightgrey);
+    padding: 16px;
+    border-radius: 8px;
+    margin: 4px auto;
+    
+    cursor: pointer;
+}
+
+.draggableCard:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  .clearBtn{
+    color: var(--clr-accent);
+  }
+.clearBtn:hover{
+    color: var(--clr-accent);
+}
+  
